@@ -100,7 +100,7 @@ Mutable
 • Mutable slower to access
 • Mutable consumes more memory due to mutability.
 • Dictionary, Sets, Lists
-    
+
   Example:
   --------
     Dictionary : 
