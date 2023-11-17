@@ -1,4 +1,4 @@
-1. Python Data Types
+1)Python Data Types
 Ans)
 Numeric = int, float, complex
 String = str
@@ -9,7 +9,7 @@ Boolean = bool
 Set = set,frozenset
 None = NoneType
 
-2. Django architecture
+2)Django architecture
 Ans) 
 Models:  
 -------
@@ -28,7 +28,7 @@ Controller:
 • In Django, the controller functionality is handled by the framework itself.
 • URL parsing is part of the controller, routing requests to the appropriate view.
 
-3.	What is Decorators ?
+3)What is Decorators ?
 Ans)
   A decorator is a function that takes another function as an argument and adds functionality 
     or augments the function without changing it. 
@@ -51,7 +51,7 @@ def my_decorator(func):
 def say_hello():
     print("Hello!")
 
-4) Explain Django’s Request / Response Cycle.
+4)Explain Django’s Request / Response Cycle.
 Ans)
 • A request is received by the Django server.
 • The server looks for a matching URL in the urlpatterns defined for the project.
@@ -87,7 +87,7 @@ MIDDLEWARE = [
   'path.to.MyCustomMiddleware',
 ]
 
-6) What is Django ORM ?
+6)What is Django ORM ?
 Definition:
 ----------
 Django ORM (Object-Relational Mapping) is a database abstraction API in Django.
