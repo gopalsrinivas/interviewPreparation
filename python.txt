@@ -13,20 +13,20 @@ None = NoneType
 Ans) 
 Models:  
 -------
-   It describes database schema and data structure.
+• It describes database schema and data structure.
 Views:
 ------
-    Controls what users see.
-    Retrieves data from models and performs necessary calculations.
-    Passes data to templates for display.
+• Controls what users see.
+• Retrieves data from models and performs necessary calculations.
+• Passes data to templates for display.
 Templates:
 ----------
-    Determines how users see the data.
-    Describes how data received from views should be formatted for display on the page.
+• Determines how users see the data.
+• Describes how data received from views should be formatted for display on the page.
 Controller:
 -----------
-    In Django, the controller functionality is handled by the framework itself.
-    URL parsing is part of the controller, routing requests to the appropriate view.
+• In Django, the controller functionality is handled by the framework itself.
+• URL parsing is part of the controller, routing requests to the appropriate view.
 
 3.	What is Decorators ?
 Ans)
