@@ -1,1 +1,12 @@
-1. 
+1. Python Data Types
+Ans)
+Numeric = int, float, complex
+String = str
+Sequence = list,tuple,range
+Binary = bytes,bytearray,memorryview
+Mapping = dic
+Boolean = bool
+Set = set,frozenset
+None = NoneType
+
+
