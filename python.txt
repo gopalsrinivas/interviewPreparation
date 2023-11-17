@@ -9,4 +9,138 @@ Boolean = bool
 Set = set,frozenset
 None = NoneType
 
+2. Django architecture
+Ans) 
+Models:  
+-------
+   It describes database schema and data structure.
+Views:
+------
+    Controls what users see.
+    Retrieves data from models and performs necessary calculations.
+    Passes data to templates for display.
+Templates:
+----------
+    Determines how users see the data.
+    Describes how data received from views should be formatted for display on the page.
+Controller:
+-----------
+    In Django, the controller functionality is handled by the framework itself.
+    URL parsing is part of the controller, routing requests to the appropriate view.
+
+3.	What is Decorators ?
+Ans)
+  A decorator is a function that takes another function as an argument and adds functionality 
+    or augments the function without changing it. 
+ These built-in decorators are used when decorating function-based views.
+
+syntax:
+---------
+@decorator_name
+
+example:
+------------
+def my_decorator(func):
+   def wrapper():
+       print("Something is happening before the function is called.")
+       fun()
+       print("Something is happening after the function is called")
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print("Hello!")
+
+4) Explain Django’s Request / Response Cycle.
+Ans)
+• A request is received by the Django server.
+• The server looks for a matching URL in the urlpatterns defined for the project.
+• If no matching URL is found, then a response with 404 status code is returned. 
+• If a matching URL is found, the corresponding code in the view file associated with the URL is executed.
+• The executed code in the view builds and sends a response back to the client.
+
+5) What is Middleware and use of Middleware in django ?
+Ans)
+Middleware Definition:
+-----------------------
+• Middleware is a layer in Django's Request/Response processing pipeline.
+• Each middleware is responsible for specific functions on the request and/or response, like caching or Gzipping.
+Use of Middleware:
+-----------------------
+• Middleware in Django is a lightweight plugin processing requests and responses.
+• Performs functions like security, CSRF protection, session management, and authentication.
+• Django supports various built-in middleware for common tasks.
+
+Example Middleware:
+-------------------
+class MyCustomMiddleware:
+    def __init__(self, get_response):
+        self.get_response = get_response
+
+    def __call__(self, request):
+        # Code to execute before the view is called
+        response = self.get_response(request)
+        # Code to execute after the view is called
+        return response
+
+MIDDLEWARE = [
+  'path.to.MyCustomMiddleware',
+]
+
+6) What is Django ORM ?
+Definition:
+----------
+Django ORM (Object-Relational Mapping) is a database abstraction API in Django.
+Allows interaction with database models, performing actions like add, delete, modify, and query objects.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6. How you can create a project in Django
+Ans)
+django-admin startproject projectName
+py manage.py startapp appName
+
+7) What are the features available in Django?
+Ans)
+• Admin Interface (CRUD)
+• Templating
+• Form handling
+• Internationalization and Localization
+• Session, user management, role-based permissions
+• Object-relational mapping (ORM)
+• Testing Framework
+• Fantastic Documentation
+• Middleware Support
+• Security Features
+• Testing Support
+
 
