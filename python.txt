@@ -94,7 +94,6 @@ Django ORM (Object-Relational Mapping) is a database abstraction API in Django.
 Allows interaction with database models, performing actions like add, delete, modify, and query objects.
 
 7) What is difference between mutable and immutable objects
-
 Mutable
 --------
 • Mutable Can be modified after creation.
@@ -102,7 +101,6 @@ Mutable
 • Mutable consumes more memory due to mutability.
 • Dictionary, Sets, Lists
     
-
   Example:
   --------
     Dictionary : 
@@ -135,15 +133,45 @@ Immutable
     > Lists,tuple,str,bytes = Ordered
     > Dictionary,Sets,frozenset = Unordered
 
+8) Difference Between List and Tuple
+Ans
+---
+List
+------
+• Syntax: list_1 = [10, ‘Chelsea’, 20]
+• Lists are mutable i.e they can be edited.
+• Lists are slower than tuples.
+• Lists Consume more memory.
+• Lists have several built-in methods
+• The List is better for performing operations, such as insertion and deletion
 
+Tuple
+------
+• Syntax: tup_1 = (10, "Chelsea", 20)
+• Tuples are immutable (tuples are lists which can't be edited).
+• Tuples are faster than list.
+• Tuple consumes less memory
+• Tuple does not have many built-in methods
+• Tuple data type is well-suited for element access.
 
+9) Difference between SQL and NOSQL 
+SQL
+-------
+• SQL databases are categorized as Relational Database Management System (RDBMS).
+• SQL databases have fixed or static or predefined schema.
+• SQL databases are vertically scalable.
+• SQL databases display data in form of tables so it is known as table-based database.
+• SQL databases are best suited for complex queries.
+• MySQL, Oracle, Sqlite, PostgreSQL and MS-SQL etc. are the example of SQL database.
 
-
-
-
-
-
-
+NOSQL
+-------
+• NoSQL databases are categorized as Non-relational or distributed database system
+• NoSQL databases have dynamic schema.
+• NoSQL databases are horizontally scalable.
+• NoSQL databases display data as collection of key-value pair, documents, graph databases or wide-column stores.
+• NoSQL databases are not so good for complex queries because these are not as powerful as SQL queries.
+• MongoDB, BigTable, Redis, RavenDB, Cassandra, Hbase, Neo4j, CouchDB etc. are the example of nosql database
 
 
 
