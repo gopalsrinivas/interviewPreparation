@@ -1,4 +1,4 @@
-1)Python Data Types
+1) Python Data Types
 Ans)
 Numeric = int, float, complex
 String = str
@@ -9,7 +9,7 @@ Boolean = bool
 Set = set,frozenset
 None = NoneType
 
-2)Django architecture
+2) Django architecture
 Ans) 
 Models:  
 -------
@@ -28,7 +28,7 @@ Controller:
 • In Django, the controller functionality is handled by the framework itself.
 • URL parsing is part of the controller, routing requests to the appropriate view.
 
-3)What is Decorators ?
+3) What is Decorators ?
 Ans)
   A decorator is a function that takes another function as an argument and adds functionality 
     or augments the function without changing it. 
@@ -51,7 +51,7 @@ def my_decorator(func):
 def say_hello():
     print("Hello!")
 
-4)Explain Django’s Request / Response Cycle.
+4) Explain Django’s Request / Response Cycle.
 Ans)
 • A request is received by the Django server.
 • The server looks for a matching URL in the urlpatterns defined for the project.
@@ -87,14 +87,53 @@ MIDDLEWARE = [
   'path.to.MyCustomMiddleware',
 ]
 
-6)What is Django ORM ?
+6) What is Django ORM ?
 Definition:
 ----------
 Django ORM (Object-Relational Mapping) is a database abstraction API in Django.
 Allows interaction with database models, performing actions like add, delete, modify, and query objects.
 
+7) What is difference between mutable and immutable objects
 
+Mutable
+--------
+• Mutable Can be modified after creation.
+• Mutable slower to access
+• Mutable consumes more memory due to mutability.
+• Dictionary, Sets, Lists
+    
 
+  Example:
+  --------
+    Dictionary : 
+    -------------
+        country_capitals = {
+            "United States": "Washington D.C.", 
+            "Italy": "Rome", 
+            "England": "London"
+        }
+   
+    Sets : 
+    -------
+      my_set = {1,2,3,4,5,6}
+      print(my_set)
+      o/p: {1,2,3,4,5,6}
+
+    List :
+    -------
+      age = [1,2,3,4,5,6]
+      print(age)
+      o/p : [1,2,3,4,5,6] 
+   
+Immutable
+----------
+• Immutable Cannot be modified after creation.
+• Immutable quicker to access
+• Immutable consumes less memory.
+• str, tuple,Int,float, bool, frozenset, bytes
+
+    > Lists,tuple,str,bytes = Ordered
+    > Dictionary,Sets,frozenset = Unordered
 
 
 
