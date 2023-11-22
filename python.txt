@@ -177,8 +177,9 @@ NOSQL
 Ans) The Python interpreter is a program that executes Python code.
       It reads and interprets Python scripts or commands line by line and carries out the instructions.
 
-11)What Python map() Function
-Ans) The map() function executes a specified function for each item in an iterable. The item is sent to the function as a parameter.
+11) What Python map() Function
+Ans) The map() function executes a specified function for each item in an iterable. 
+         The item is sent to the function as a parameter.
 Syntax:
 ---------
 map(function, iterable)
