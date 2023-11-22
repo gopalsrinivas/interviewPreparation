@@ -33,11 +33,9 @@ Ans)
   A decorator is a function that takes another function as an argument and adds functionality 
     or augments the function without changing it. 
  These built-in decorators are used when decorating function-based views.
-
 syntax:
 ---------
 @decorator_name
-
 example:
 ------------
 def my_decorator(func):
@@ -46,7 +44,6 @@ def my_decorator(func):
        fun()
        print("Something is happening after the function is called")
     return wrapper
-
 @my_decorator
 def say_hello():
     print("Hello!")
@@ -196,8 +193,19 @@ squared_numbers = list(map(lambda x:x**2, numbers))
 print(squared_numbers)
 o/p: [1, 4, 9, 16, 25]
 
+12) What is Python Lambda ?
+Ans) A Lambda function is small anonymous function.
+      A Lambda function can take any number of arguments but can only have one expression. 
+      syntax:
+      -------
+      lambda argument:expression
+      Example:
+      ----------
+      x = lambda a:a+10
+      print(x(5))
 
-
+13) What is namespace in Python ?
+Ans) A namespace is a naming system used to make sure that names are unique to avoid naming conflicts. 
 
 
 
