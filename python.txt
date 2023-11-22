@@ -11,22 +11,12 @@ None = NoneType
 
 2) Django architecture
 Ans) 
-Models:  
--------
-• It describes database schema and data structure.
-Views:
+Models: It describes database schema and data structure.
 ------
-• Controls what users see.
-• Retrieves data from models and performs necessary calculations.
-• Passes data to templates for display.
-Templates:
-----------
-• Determines how users see the data.
-• Describes how data received from views should be formatted for display on the page.
-Controller:
------------
-• In Django, the controller functionality is handled by the framework itself.
-• URL parsing is part of the controller, routing requests to the appropriate view.
+Views: It controls what a user sees, the view retrieves data from appropriate models 
+------     and executes any calculation made to the data and pass it to the template.
+Templates: It determines how the user sees it. It describes how the data received from 
+----------     the views should be changed or formatted for display on the page.
 
 3) What is Decorators ?
 Ans)
@@ -207,7 +197,9 @@ Ans) A Lambda function is small anonymous function.
 13) What is namespace in Python ?
 Ans) A namespace is a naming system used to make sure that names are unique to avoid naming conflicts. 
 
-
+14) csv and pdf file librarys in Python
+Ans) > import csv or import pandas as pd
+     > import PyPDF2 and from fpdf import FPDF
 
 
 
