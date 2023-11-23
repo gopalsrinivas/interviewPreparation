@@ -202,11 +202,59 @@ Ans) A namespace is a naming system used to make sure that names are unique to a
 Ans) > import csv or import pandas as pd
      > import PyPDF2 and from fpdf import FPDF
 
+15) What is serialization in Django
+Ans) Serialization is the process of converting Django models into other formats such as XML, JSON, etc. 
 
+16) Explain Q objects in Django ORM 
+Ans) When writing complex queries, Q objects are employed because filter () functions only allow you to 'AND' the conditions;
+       whereas Q objects allow you to 'OR' the conditions.
+       example:
+       --------
+          from django.db.models import Q
 
+          q1 = Q(name__startwith='A')
+          q2 = Q(age__gte=18)
+          
+          # AND operation
+          result = YourModel.objects.filter(q1 & q2)
 
+          # OR operation
+          result = YourModel.objects.filter(q1 | q2)
 
+17) Explain the migration in Django and Explain the use of ‘migrate’ command in Django ?
+Ans) 
+Migration in Django is to make changes to models like deleting a model, adding a field, etc. into database schema. 
+There are several commands you use to interact with migrations.
+•	Migrate
+•	Makemigrations		
+•	Sqlmigrate
+To do the migration in SQL, you have to print the SQL statement for resetting sequences for a given app name.
+django-admin.py sqlsequencereset
+Use this command to generate SQL that will fix cases where a sequence is out sync with its automatically incremented field data.
 
+migrate:
+-------
+• The migrate command is basically used to apply or unapply migrations changes made to the models.
+• This command basically synchronizes the current set of models and migrations with the database state.
+• We can use this command with or without parameters.
+• In case you do not specify any parameter, all apps will have all their migrations running.
+
+18) What is rest api in python ?
+Ans) REST API stands for Representational State Transfer Application Programming Interface.
+      It is a way for two pieces of software to communicate with each other.
+      REST APIs are used to create "web services" in HTTP requests, which provide data between client and server applications.
+      HTTP methods used in RESTful APIs:
+      ----------------------------------
+      GET,POST,PUT,PATCH,DELETE
+
+19) What is Json ?
+Ans)
+Data Interchange Format: JSON (JavaScript Object Notation) is a lightweight data interchange format used for structuring and transmitting
+-------------------------       data between a server and a client.
+Human-Readable and Machine-Readable: It is easy for both humans to read and write, and for machines to parse and generate.
+------------------------------------     The format is text-based and consists of key-value pairs.
+Widely Used in Web Development: JSON is commonly used in web development for APIs (Application Programming Interfaces) to exchange data between a web server and a client, 
+------------------------------      and it is supported by many programming languages.
 
 6. How you can create a project in Django
 Ans)
