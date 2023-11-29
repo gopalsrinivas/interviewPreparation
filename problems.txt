@@ -66,3 +66,19 @@ Ans)
     def say_hello():
          print("Hello !")
 
+10)Count the integer number repeated in the above list
+Ans) 
+from collections import Counter
+
+my_list = [1, 2, 3, 4, 5, 2, 4, 4]
+
+element_counts = Counter(my_list)
+
+for element, count in element_counts.items():
+    print(f"{element}: {count} times")
+
+
+
+
+
+

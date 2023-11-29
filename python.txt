@@ -256,12 +256,12 @@ Human-Readable and Machine-Readable: It is easy for both humans to read and writ
 Widely Used in Web Development: JSON is commonly used in web development for APIs (Application Programming Interfaces) to exchange data between a web server and a client, 
 ------------------------------      and it is supported by many programming languages.
 
-6. How you can create a project in Django
+20). How you can create a project in Django
 Ans)
 django-admin startproject projectName
 py manage.py startapp appName
 
-7) What are the features available in Django?
+21) What are the features available in Django?
 Ans)
 • Admin Interface (CRUD)
 • Templating
@@ -275,4 +275,7 @@ Ans)
 • Security Features
 • Testing Support
 
-
+22) What is index in database ?
+Ans) 
+• The index is a type of data structure. It is used to locate and access the data in a database table quickly.
+• Indexing is used to optimize the performance of a database by minimizing the number of disk accesses required when a query is processed.
