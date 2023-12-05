@@ -245,7 +245,14 @@ Ans) REST API stands for Representational State Transfer Application Programming
       REST APIs are used to create "web services" in HTTP requests, which provide data between client and server applications.
       HTTP methods used in RESTful APIs:
       ----------------------------------
-      GET,POST,PUT,PATCH,DELETE
+      GET: Used to retrieve data from a specified resource.
+      POST: Used to submit data to be processed to a specified resource.
+      PUT: Used to update a current resource with new data.
+      DELETE: Used to request the removal of a resource.
+      PATCH: Used to apply partial modifications to a resource.
+      HEAD: Similar to GET but used to retrieve only the headers, not the actual data.
+      OPTIONS: Used to describe the communication options for the target resource.
+      TRACE: Used to perform a message loop-back test along the path to the target 
 
 19) What is Json ?
 Ans)
