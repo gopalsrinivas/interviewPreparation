@@ -288,9 +288,35 @@ Ans)
 • Indexing is used to optimize the performance of a database by 
         minimizing the number of disk accesses required when a query is processed.
 
+23) What is useState hook ?
+Ans) The 'useState' hook is called inside a functional component to declare a state variable
+       and function to update that variable. It return an array with two elements:
+        1) The current state value (initially set to the provided initial state).
+        2) A function that allows you to update the state.
+        Syntax:
+        ---------
+           import React, { useState } from 'react';
+           const [state, setState] = useState(initialstate)
+    
+24) What is useEffect hook ?
+Ans) `useEffect` is a React hook that allows executing side effects in functional components, 
+       such as data fetching or subscriptions, and it runs after each render.
+       Syntax:
+       -------
+         import React, {useEffect} from 'react';
+         useEffect(() => {
+          // Side effect code
+          return () => {
+            // Cleanup code (optional)
+          };
+        }, [dependencies]);
 
 
 
+
+
+
+ 
 
 
 
