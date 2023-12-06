@@ -285,5 +285,19 @@ Ans)
 22) What is index in database ?
 Ans) 
 • The index is a type of data structure. It is used to locate and access the data in a database table quickly.
-• Indexing is used to optimize the performance of a database by
+• Indexing is used to optimize the performance of a database by 
         minimizing the number of disk accesses required when a query is processed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
