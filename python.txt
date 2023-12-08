@@ -340,7 +340,7 @@ Ans)
         minimizing the number of disk accesses required when a query is processed.
 
 23) What is useState hook ?
-Ans)useState is a React Hook that lets you add a state variable to your component 
+Ans) `useState` is a React Hook that lets you add a state variable to your component 
      which returns an array with exactly two values.
       1) Current State
       2) Set Function
