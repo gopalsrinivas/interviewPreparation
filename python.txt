@@ -341,12 +341,12 @@ Ans)
 
 23) What is useState hook ?
 Ans) `useState` is a React Hook that lets you add a state variable to your component 
-     which returns an array with exactly two values.
-      1) Current State
-      2) Set Function
-      syntax:
-      ---------
-       const [age, setage] = useState(28);
+        which returns an array with exactly two values.
+        1) Current State
+        2) Set Function
+        syntax:
+        ---------
+        const [age, setage] = useState(28);
 
 24) What is useEffect hook ?
 Ans) `useEffect` is a React hook that lets you perform side-effects in the component.
@@ -362,9 +362,22 @@ Ans) `useEffect` is a React hook that lets you perform side-effects in the compo
         }, [dependencies]);
 
 
+25) How many ways to pass data from one component to another in Next.js 14
+Ans)
+1. Props
+2. Context API
+3. Query Parameters
 
-
-
+25) Nextjs hook list
+Ans) 
+1. useEffect
+2. useState
+3. useContext
+4. useReducer
+5. useCallback
+6. useMemo
+7. useRef
+8. useRouter
 
  
 
