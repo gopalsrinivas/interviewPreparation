@@ -379,8 +379,17 @@ Ans)
 7. useRef
 8. useRouter
 
- 
+26) What is server-side rendering (SSR) and how does it work in Next.js?
+Ans) SSR is a technique where the HTML for a web page is generated on the server and then sent to the client. 
+     This can improve the performance of your web application by reducing the amount of JavaScript that needs to be executed on the client. 
+     Next.js implements SSR by using the getInitialProps() method.
+     This method is called on the server before the page is rendered and can be used to fetch data and generate the HTML for the page.
 
+27) What is static site generation (SSG) and how does it differ from SSR?
+Ans) SSG is a technique where the HTML for a web page is generated at build time and then served to the client on demand.
+     This can improve the performance of your web application by reducing the amount of work that needs to be done on the server.
+     Next.js implements SSG by using the getStaticProps() method.
+     This method is called at build time and can be used to fetch data and generate the HTML for the page.
 
 
 
