@@ -391,8 +391,16 @@ Ans) SSG is a technique where the HTML for a web page is generated at build time
      Next.js implements SSG by using the getStaticProps() method.
      This method is called at build time and can be used to fetch data and generate the HTML for the page.
 
-
-
+28)Authentication in REST APIs Types
+Ans)
+1. Basic Authentication:
+     Involves sending a username and password with each request, but can be less secure without encryption.
+2. Token Authentication:
+    Uses generated tokens, like JSON Web Tokens (JWT), exchanged between client and server, offering enhanced security without sending login credentials with each request.
+3. OAuth Authentication:
+    Enables third-party limited access to user resources without revealing credentials by issuing access tokens after user authentication.
+4. API Key Authentication:
+    Assigns unique keys to users or applications, sent in headers or parameters; while simple, it might lack the security features of token-based or OAuth methods.
 
 
 
