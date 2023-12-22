@@ -402,6 +402,32 @@ Ans)
 4. API Key Authentication:
     Assigns unique keys to users or applications, sent in headers or parameters; while simple, it might lack the security features of token-based or OAuth methods.
 
+29) Example of prefetch_related and select_related
+# models.py
+from django.db import models
+
+class Author(models.Model):
+    name = models.CharField(max_length=100)
+
+class Category(models.Model):
+    name = models.CharField(max_length=100)
+
+class Article(models.Model):
+    title = models.CharField(max_length=200)
+    content = models.TextField()
+    author = models.ForeignKey(Author, on_delete=models.CASCADE)
+    categories = models.ManyToManyField(Category)
+    publication_date = models.DateField()
+
+select_related
+---------------
+   # ForeignKey and OneToOneField relationships
+article = Article.objects.select_related('author').get(pk=1)
+
+   # ManyToMany and reverse ForeignKey/OneToOneField relationships
+article = Article.objects.prefetch_related('categories').get(pk=1)
+
+article = Article.objects.select_related('author').prefetch_related('categories').get(pk=1)
 
 
 
