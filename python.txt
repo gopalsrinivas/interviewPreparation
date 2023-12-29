@@ -216,7 +216,7 @@ Ans) The Python interpreter is a program that executes Python code.
       It reads and interprets Python scripts or commands line by line and carries out the instructions.
 
 11) What Python map() Function
-Ans) The map() function executes a specified function for each item in an iterable. 
+Ans) The map() function executes a specified function for each item in a given iterable (list, tuple etc). 
          The item is sent to the function as a parameter.
 Syntax:
 ---------
@@ -228,11 +228,13 @@ iterable: It is a sequence, collection or an iterator object which is to be mapp
 Example:
 -----------
 # Python example program for map() function
-numbers = [1,2,3,4,5]
-# lambda function defines the squaring operation  
-squared_numbers = list(map(lambda x:x**2, numbers))
-print(squared_numbers)
-o/p: [1, 4, 9, 16, 25]
+
+def Square(n):
+    return n**2
+numbers = [10, 20, 30, 40, 50, 60]
+result = map(Square, numbers)
+print(list(result));
+# [100, 400, 900, 1600, 2500, 3600]
 
 12) What is Python Lambda ?
 Ans) A Lambda function is small anonymous function.
@@ -413,23 +415,53 @@ class Category(models.Model):
     name = models.CharField(max_length=100)
 
 class Article(models.Model):
-    title = models.CharField(max_length=200)
-    content = models.TextField()
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
     categories = models.ManyToManyField(Category)
+    title = models.CharField(max_length=200)
+    content = models.TextField()
     publication_date = models.DateField()
 
 select_related
 ---------------
-   # ForeignKey and OneToOneField relationships
+# ForeignKey and OneToOneField relationships
 article = Article.objects.select_related('author').get(pk=1)
 
-   # ManyToMany and reverse ForeignKey/OneToOneField relationships
+# ManyToMany and reverse ForeignKey/OneToOneField relationships
 article = Article.objects.prefetch_related('categories').get(pk=1)
 
 article = Article.objects.select_related('author').prefetch_related('categories').get(pk=1)
 
+30)Django, the relationships OneToOneField, ForeignKey (ManyToOne), and ManyToManyField
+Ans)
+OneToOneField:
+--------------
+from django.db import models
 
+class Person(models.Model):
+      name = model.CharField(max_length=150)
 
+class Profile(models.Model):
+      bio = models.TextField()
+      person=model.OneToOneField(Person, on_delete=models.CASCADE)
 
+ForeignKey (ManyToOne):
+------------------------
+from django.db import models
 
+class Author(models.Model):
+      name = models.CharField(max_length=150)
+
+class Book(models.Model):
+       title = model.CharField(max_length=150)
+       author = models.ForeignKey(Author, on_delete=models.CASCADE)
+
+ManyToManyField:
+----------------
+from django.db import models
+
+class Student(models.Model):
+      name = models.CharField(max_length=150)
+      courses = models.ManyToManyField('Course')
+
+class Course(models.Model):
+       name = models.CharField(max_length=200)
