@@ -9,12 +9,12 @@ Boolean = boolean
 Set = set,frozenset
 None = NoneType
 
-1. String is an ordered sequence of Unicode characters
+2. String is an ordered sequence of Unicode characters
 var = "Welcome To TutorialsPoint"
 print(type(var))
 
 
-2) Django architecture
+3) Django architecture
 Ans) 
 Models: It describes database schema and data structure.
 ------
@@ -23,14 +23,14 @@ Views: It controls what a user sees, the view retrieves data from appropriate mo
 Templates: It determines how the user sees it. It describes how the data received from 
 ----------     the views should be changed or formatted for display on the page.
 
-2) Second Largest Number in Python
+4) Second Largest Number in Python
 Ans)
 data = [2, 5, 2, 4, 6, 8, 3, 6, 6, 9, 7]
 sorted_data = sorted(data)
 print("Second Largest number:", sorted_data[-2])
 print("First Largest number:", sorted_data[-1])
 
-3) What is Decorators ?
+5) What is Decorators ?
 Ans)
   A decorator is a function that takes another function as an argument and adds functionality 
     or augments the function without changing it. 
@@ -51,14 +51,14 @@ def my_decorator(func):
 def say_hello():
     print("Hello!")
 
-3) How to convert a list to a tuple ?
+6) How to convert a list to a tuple ?
 Ans)
 my_list=['list1','list2','list3','list4','list5','list6']
 my_tuple = tuple(my_list)
 print(my_tuple)        o/p: ('list1', 'list2', 'list3', 'list4', 'list5', 'list6')
 print(type(my_tuple))  o/p: <class 'tuple'>
 
-4) Explain Django’s Request / Response Cycle.
+7) Explain Django’s Request / Response Cycle.
 Ans)
 • A request is received by the Django server.
 • The server looks for a matching URL in the urlpatterns defined for the project.
@@ -66,7 +66,7 @@ Ans)
 • If a matching URL is found, the corresponding code in the view file associated with the URL is executed.
 • The executed code in the view builds and sends a response back to the client.
 
-4) How to get dictionary values and in list ?
+8) How to get dictionary values and in list ?
 Ans)
 data = {'manoja': 'java', 'tripura': 'python', 'manoj': 'statistics', 'manoji': 'cpp'}
 # get keys
@@ -74,7 +74,7 @@ print(list(data.keys()))     o/p : ['manoja', 'tripura', 'manoj', 'manoji']
 # get values
 print(list(data.values()))   o/p : ['java', 'python', 'statistics', 'cpp']
 
-5) What is Middleware and use of Middleware in django ?
+9) What is Middleware and use of Middleware in django ?
 Ans)
 Middleware Definition:
 -----------------------
@@ -106,13 +106,13 @@ MIDDLEWARE = [
     print(l[::-1]) 
     o/p: [5, 4, 3, 2, 1]
 
-6) What is Django ORM ?
+10) What is Django ORM ?
 Definition:
 ----------
 Django ORM (Object-Relational Mapping) is a database abstraction API in Django.
 Allows interaction with database models, performing actions like add, delete, modify, and query objects.
 
-7) What is difference between mutable and immutable objects
+11) What is difference between mutable and immutable objects
 Mutable
 --------
 • Mutable Can be modified after creation.
@@ -152,11 +152,11 @@ Immutable
     > Lists,tuple,str,bytes = Ordered
     > Dictionary,Sets,frozenset = Unordered
 
-6) d = {"a":10, "b":20, "c":10, "a":100} 
+12) d = {"a":10, "b":20, "c":10, "a":100} 
    print(d)
    o/p : {"a":10, "b":20, "c":10}
 
-8) Difference Between List and Tuple
+13) Difference Between List and Tuple
 Ans
 ---
 List
@@ -177,12 +177,12 @@ Tuple
 • Tuple does not have many built-in methods
 • Tuple data type is well-suited for element access.
 
-7) Remove duplicate elements from list: 
+14) Remove duplicate elements from list: 
     my_list = [1, 2, 1, 3, 2, 3, 1, 4, 5]
     my_final_list = set(my_list)
     print(list(my_final_list))
 
-9) Difference between SQL and NOSQL 
+15) Difference between SQL and NOSQL 
 SQL
 -------
 • SQL databases are categorized as Relational Database Management System (RDBMS).
@@ -201,7 +201,7 @@ NOSQL
 • NoSQL databases are not so good for complex queries because these are not as powerful as SQL queries.
 • MongoDB, BigTable, Redis, RavenDB, Cassandra, Hbase, Neo4j, CouchDB etc. are the example of nosql database
 
-8) How can you find common elements and uncommon elements in two lists using Python ?
+16) How can you find common elements and uncommon elements in two lists using Python ?
     list1 = [1, 2, 3, 4, 5]
     list2 = [3, 4, 5, 6, 7]
     # common elements
@@ -211,11 +211,11 @@ NOSQL
     uce = set(list1).symmetric_difference(list2)
     print("Uncommon elements:", uce)
 
-10) What is a Python interpreter
+17) What is a Python interpreter
 Ans) The Python interpreter is a program that executes Python code.
       It reads and interprets Python scripts or commands line by line and carries out the instructions.
 
-11) What Python map() Function
+18) What Python map() Function
 Ans) The map() function executes a specified function for each item in a given iterable (list, tuple etc). 
          The item is sent to the function as a parameter.
 Syntax:
@@ -236,7 +236,7 @@ result = map(Square, numbers)
 print(list(result));
 # [100, 400, 900, 1600, 2500, 3600]
 
-12) What is Python Lambda ?
+19) What is Python Lambda ?
 Ans) A Lambda function is small anonymous function.
       A Lambda function can take any number of arguments but can only have one expression. 
       syntax:
@@ -247,18 +247,17 @@ Ans) A Lambda function is small anonymous function.
       x = lambda a:a+10
       print(x(5))
 
-13) What is namespace in Python ?
+20) What is namespace in Python ?
 Ans) A namespace is a naming system used to make sure that names are unique to avoid naming conflicts. 
 
-14) csv and pdf file librarys in Python
+21) csv and pdf file librarys in Python
 Ans) > import csv or import pandas as pd
      > import PyPDF2 and from fpdf import FPDF
 
-
-15) What is serialization in Django
+22) What is serialization in Django
 Ans) Serialization is the process of converting Django models into other formats such as XML, JSON, etc. 
 
-16) Explain Q objects in Django ORM 
+23) Explain Q objects in Django ORM 
 Ans) When writing complex queries, Q objects are employed because filter () functions only allow you to 'AND' the conditions;
        whereas Q objects allow you to 'OR' the conditions.
        example:
@@ -274,7 +273,7 @@ Ans) When writing complex queries, Q objects are employed because filter () func
           # OR operation
           result = YourModel.objects.filter(q1 | q2)
 
-17) Explain the migration in Django and Explain the use of ‘migrate’ command in Django ?
+24) Explain the migration in Django and Explain the use of ‘migrate’ command in Django ?
 Ans) 
 Migration in Django is to make changes to models like deleting a model, adding a field, etc. into database schema. 
 There are several commands you use to interact with migrations.
@@ -292,7 +291,7 @@ migrate:
 • We can use this command with or without parameters.
 • In case you do not specify any parameter, all apps will have all their migrations running.
 
-18) What is rest api in python ?
+25) What is rest api in python ?
 Ans) REST API stands for Representational State Transfer Application Programming Interface.
       It is a way for two pieces of software to communicate with each other.
       REST APIs are used to create "web services" in HTTP requests, which provide data between client and server applications.
@@ -307,7 +306,7 @@ Ans) REST API stands for Representational State Transfer Application Programming
       OPTIONS: Used to describe the communication options for the target resource.
       TRACE: Used to perform a message loop-back test along the path to the target 
 
-19) What is Json ?
+26) What is Json ?
 Ans)
 Data Interchange Format: JSON (JavaScript Object Notation) is a lightweight data interchange format used for structuring and transmitting
 -------------------------       data between a server and a client.
@@ -316,12 +315,12 @@ Human-Readable and Machine-Readable: It is easy for both humans to read and writ
 Widely Used in Web Development: JSON is commonly used in web development for APIs (Application Programming Interfaces) to exchange data between a web server and a client, 
 ------------------------------      and it is supported by many programming languages.
 
-20). How you can create a project in Django
+27). How you can create a project in Django
 Ans)
 django-admin startproject projectName
 py manage.py startapp appName
 
-21) What are the features available in Django?
+28) What are the features available in Django?
 Ans)
 • Admin Interface (CRUD)
 • Templating
@@ -335,13 +334,13 @@ Ans)
 • Security Features
 • Testing Support
 
-22) What is index in database ?
+29) What is index in database ?
 Ans) 
 • The index is a type of data structure. It is used to locate and access the data in a database table quickly.
 • Indexing is used to optimize the performance of a database by 
         minimizing the number of disk accesses required when a query is processed.
 
-23) What is useState hook ?
+30) What is useState hook ?
 Ans) `useState` is a React Hook that lets you add a state variable to your component 
         which returns an array with exactly two values.
         1) Current State
@@ -350,7 +349,7 @@ Ans) `useState` is a React Hook that lets you add a state variable to your compo
         ---------
         const [age, setage] = useState(28);
 
-24) What is useEffect hook ?
+31) What is useEffect hook ?
 Ans) `useEffect` is a React hook that lets you perform side-effects in the component.
        Side effect basically is an action which connects the components to the outside wold
        Syntax:
@@ -364,13 +363,13 @@ Ans) `useEffect` is a React hook that lets you perform side-effects in the compo
         }, [dependencies]);
 
 
-25) How many ways to pass data from one component to another in Next.js 14
+32) How many ways to pass data from one component to another in Next.js 14
 Ans)
 1. Props
 2. Context API
 3. Query Parameters
 
-25) Nextjs hook list
+33) Nextjs hook list
 Ans) 
 1. useEffect
 2. useState
@@ -381,19 +380,19 @@ Ans)
 7. useRef
 8. useRouter
 
-26) What is server-side rendering (SSR) and how does it work in Next.js?
+34) What is server-side rendering (SSR) and how does it work in Next.js?
 Ans) SSR is a technique where the HTML for a web page is generated on the server and then sent to the client. 
      This can improve the performance of your web application by reducing the amount of JavaScript that needs to be executed on the client. 
      Next.js implements SSR by using the getInitialProps() method.
      This method is called on the server before the page is rendered and can be used to fetch data and generate the HTML for the page.
 
-27) What is static site generation (SSG) and how does it differ from SSR?
+35) What is static site generation (SSG) and how does it differ from SSR?
 Ans) SSG is a technique where the HTML for a web page is generated at build time and then served to the client on demand.
      This can improve the performance of your web application by reducing the amount of work that needs to be done on the server.
      Next.js implements SSG by using the getStaticProps() method.
      This method is called at build time and can be used to fetch data and generate the HTML for the page.
 
-28)Authentication in REST APIs Types
+36)Authentication in REST APIs Types
 Ans)
 1. Basic Authentication:
      Involves sending a username and password with each request, but can be less secure without encryption.
@@ -404,7 +403,7 @@ Ans)
 4. API Key Authentication:
     Assigns unique keys to users or applications, sent in headers or parameters; while simple, it might lack the security features of token-based or OAuth methods.
 
-29) Example of prefetch_related and select_related
+37) Example of prefetch_related and select_related
 # models.py
 from django.db import models
 
@@ -431,7 +430,7 @@ article = Article.objects.prefetch_related('categories').get(pk=1)
 
 article = Article.objects.select_related('author').prefetch_related('categories').get(pk=1)
 
-30)Django, the relationships OneToOneField, ForeignKey (ManyToOne), and ManyToManyField
+38)Django, the relationships OneToOneField, ForeignKey (ManyToOne), and ManyToManyField
 Ans)
 OneToOneField:
 --------------
