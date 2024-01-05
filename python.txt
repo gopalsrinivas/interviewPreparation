@@ -464,3 +464,20 @@ class Student(models.Model):
 
 class Course(models.Model):
        name = models.CharField(max_length=200)
+
+39) What are the signals in Django
+Ans) 
+Signals are pieces of code which contain information about what is happening. 
+A dispatcher is used to sending the signals and listen for those signals.
+Two important parameters in signals are:
+  Sender: It specifies a particular sender from where a signal is received.
+  Receiver: It specifies the callback function which connected to the signal.
+
+40) Difference between DELETE, TRUNCATE and DROP commands in SQL
+Ans) 
+Syntax of a SQL DELETE Statement:
+    DELETE FROM Table_Name
+    DELETE FROM Table_name WHERE Condition
+Syntax of a SQL TRUNCATE Statement
+    TRUNCATE TABLE table_name
+    DROP TABLE table_name
