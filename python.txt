@@ -13,7 +13,6 @@ None = NoneType
 var = "Welcome To TutorialsPoint"
 print(type(var))
 
-
 3) Django architecture
 Ans) 
 Models: It describes database schema and data structure.
@@ -27,8 +26,8 @@ Templates: It determines how the user sees it. It describes how the data receive
 Ans)
 data = [2, 5, 2, 4, 6, 8, 3, 6, 6, 9, 7]
 sorted_data = sorted(data)
-print("Second Largest number:", sorted_data[-2])
-print("First Largest number:", sorted_data[-1])
+print("Second Largest number:", sorted_data[-2])  # o/p: Second Largest number: 8
+print("First Largest number:", sorted_data[-1]) # o/p: First Largest Number:9     
 
 5) What is Decorators ?
 Ans)
