@@ -9,16 +9,7 @@ element_counts = Counter(my_list)
 for element, count in element_counts.items():
     print(f"{element}: {count} times")
 
-11) Even or odd number Check in Python
-Ans)
-try:
-    num = int(input("Enter a number: "))
-    if (num % 2) == 0:
-        print("{0} is Even".format(num))
-    else:
-        print("{0} is Odd".format(num))
-except ValueError:
-    print("ERROR! Please enter a valid number.")
+
 
 12) Print Even number in Python
 Ans)
@@ -30,7 +21,6 @@ def print_even_number(limit):
 limit =10
 
 print_even_number(limit)
-
 
 13) Print odd number in python
 Ans)

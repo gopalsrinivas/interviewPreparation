@@ -480,3 +480,29 @@ Syntax of a SQL DELETE Statement:
 Syntax of a SQL TRUNCATE Statement
     TRUNCATE TABLE table_name
     DROP TABLE table_name
+
+41) Program to display the Fibonacci sequence up to n-th term
+Ans)
+nterms = int(input("How many terms? "))
+if nterms <= 0:
+    print("Please enter a positive integer")
+elif nterms == 1:
+    print("Fibonacci sequence upto", nterms, ":", 0)
+else:
+    fib_sequence = [0, 1]
+    for _ in range(2, nterms):
+        fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
+
+    print("Fibonacci sequence:")
+    print(*fib_sequence, sep=', ')
+
+11) Even or odd number Check in Python
+Ans)
+try:
+    num = int(input("Enter a number: "))
+    if (num % 2) == 0:
+        print("{0} is Even".format(num))
+    else:
+        print("{0} is Odd".format(num))
+except ValueError:
+    print("ERROR! Please enter a valid number.")
