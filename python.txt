@@ -205,10 +205,10 @@ NOSQL
     list2 = [3, 4, 5, 6, 7]
     # common elements
     ce = set(list1).intersection(list2)
-    print("common elements:",ce)
+    print("common elements:",ce) O/P : common elements: {3, 4, 5}
     # uncommon elements
     uce = set(list1).symmetric_difference(list2)
-    print("Uncommon elements:", uce)
+    print("Uncommon elements:", uce) O/P : Uncommon elements: {1, 2, 6, 7}
 
 17) What is a Python interpreter
 Ans) The Python interpreter is a program that executes Python code.
@@ -483,7 +483,7 @@ Syntax of a SQL TRUNCATE Statement
 
 41) Program to display the Fibonacci sequence up to n-th term
 Ans)
-nterms = int(input("How many terms? "))
+nterms = int(input("How many terms ? "))
 if nterms <= 0:
     print("Please enter a positive integer")
 elif nterms == 1:
@@ -496,6 +496,12 @@ else:
     print("Fibonacci sequence:")
     print(*fib_sequence, sep=', ')
 
+o/p:
+-----
+How many terms? 10
+Fibonacci sequence:
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+
 11) Even or odd number Check in Python
 Ans)
 try:
@@ -506,3 +512,8 @@ try:
         print("{0} is Odd".format(num))
 except ValueError:
     print("ERROR! Please enter a valid number.")
+
+o/p:
+-----
+Enter a number: 2
+2 is Even
