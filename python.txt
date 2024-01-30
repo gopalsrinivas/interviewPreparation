@@ -483,24 +483,22 @@ Syntax of a SQL TRUNCATE Statement
 
 41) Program to display the Fibonacci sequence up to n-th term
 Ans)
-nterms = int(input("How many terms ? "))
-if nterms <= 0:
-    print("Please enter a positive integer")
-elif nterms == 1:
-    print("Fibonacci sequence upto", nterms, ":", 0)
-else:
-    fib_sequence = [0, 1]
-    for _ in range(2, nterms):
-        fib_sequence.append(fib_sequence[-1] + fib_sequence[-2])
+num = int(input("Enter Number:"))
+n1, n2 = 0, 1
+print("Fibonacci Series:", n1, n2, end=" ")
+for i in range(2, num):
+    n3 = n1 + n2
+    n1 = n2
+    n2 = n3
+    print(n3, end=" ")
 
-    print("Fibonacci sequence:")
-    print(*fib_sequence, sep=', ')
+print()
 
 o/p:
 -----
-How many terms? 10
-Fibonacci sequence:
-0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+How many terms? 9
+Fibonacci Series:
+0, 1, 1, 2, 3, 5, 8, 13, 21
 
 11) Even or odd number Check in Python
 Ans)
