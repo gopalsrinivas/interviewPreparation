@@ -442,8 +442,8 @@ class Profile(models.Model):
       bio = models.TextField()
       person=model.OneToOneField(Person, on_delete=models.CASCADE)
 
-ForeignKey (ManyToOne):
-------------------------
+ForeignKey (OR) ManyToOneField (OR) OneToManyField:
+---------------------------------------------------
 from django.db import models
 
 class Author(models.Model):
