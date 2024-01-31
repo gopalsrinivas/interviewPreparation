@@ -11,7 +11,7 @@ None = NoneType
 
 2. String is an ordered sequence of Unicode characters
 var = "Welcome To TutorialsPoint"
-print(type(var))
+print(type(var)) o/p: <class 'str'>
 
 3) Django architecture
 Ans) 
