@@ -177,8 +177,7 @@ Tuple
 
 15) Remove duplicate elements from list: 
     my_list = [1, 2, 1, 3, 2, 3, 1, 4, 5]
-    my_final_list = set(my_list)
-    print(list(my_final_list))
+    print(set(my_list))  0/p: {1, 2, 3, 4, 5}
 
 16) Difference between SQL and NOSQL 
 SQL
@@ -231,8 +230,7 @@ def Square(n):
     return n**2
 numbers = [10, 20, 30, 40, 50, 60]
 result = map(Square, numbers)
-print(list(result));
-# [100, 400, 900, 1600, 2500, 3600]
+print(list(result));  # o/p: [100, 400, 900, 1600, 2500, 3600]
 
 20) What is Python Lambda ?
 Ans) A Lambda function is small anonymous function.
@@ -365,6 +363,9 @@ Ans)
 1. Props
 2. Context API
 3. Query Parameters
+4. State Management Library (Redux)
+5. URL Parameters
+6. Custom Events
 
 34) Nextjs hook list
 Ans) 
@@ -391,6 +392,9 @@ Ans) SSG is a technique where the HTML for a web page is generated at build time
 
 37)Authentication in REST APIs Types
 Ans)
+1)HTTP Basic Authentication 2)HTTP Digest Authentication 3)Token-Based Authentication (JWT)
+4)OAuth 2.0 5)Token-Based Authentication with Session Cookies 6)API Keys 7)Biometric Authentication
+
 1. Basic Authentication:
      Involves sending a username and password with each request, but can be less secure without encryption.
 2. Token Authentication:
