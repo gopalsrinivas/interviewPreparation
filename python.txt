@@ -101,9 +101,8 @@ MIDDLEWARE = [
   'path.to.MyCustomMiddleware',
 ]
 
-10)  l = [1, 2, 3, 4, 5]
-    print(l[::-1]) 
-    o/p: [5, 4, 3, 2, 1]
+10) list = [1, 2, 3, 4, 5]
+    print(list[::-1])  o/p: [5, 4, 3, 2, 1]
 
 11) What is Django ORM ?
 Definition:
