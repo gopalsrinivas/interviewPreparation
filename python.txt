@@ -527,7 +527,7 @@ Square_num = [x*x for x in range(1,11)]
 print(Square_num)  o/p: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
 45) Python packages list
-Ans) Django,Flask,SQLAlchemy,Celery,Pillow,pytest,Requests,Beautiful Soup, NumPy, Pandas, PyTorch
+Ans) Django,Flask,SQLAlchemy,Celery,Pillow,Pytest,Requests,Beautiful Soup, NumPy, Pandas, PyTorch
 
 46) Django packages list
 Ans) Django Rest Framework (DRF), django-allauth, django-crispy-forms, django-debug-toolbar, 
@@ -556,3 +556,11 @@ Instance Method:
  > Bound to instances of the class (self parameter).
  > Used to access and modify instance-specific data.
  > Regular method within a class.
+
+49) Count the integer number repeated in the above list
+Ans) 
+from collections import Counter
+numbers = [1, 2, 3, 4, 1, 2, 1, 3, 4, 5, 5]
+counts = Counter(numbers)
+for num, count in counts.items():
+    print(f"{num}: {count}")
