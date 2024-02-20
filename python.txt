@@ -564,3 +564,25 @@ numbers = [1, 2, 3, 4, 1, 2, 1, 3, 4, 5, 5]
 counts = Counter(numbers)
 for num, count in counts.items():
     print(f"{num}: {count}")
+
+o/p: 
+1: 3
+2: 2
+3: 2
+4: 2
+5: 2
+
+50)Merging both tuples
+tuple1 = (1, 2, 3)
+tuple2 = ('a', 'b', 'c')
+
+# Merging both tuples
+merged_tuple = tuple1 + tuple2
+
+print("Merged tuple:", merged_tuple)
+
+51) what is Garbage collection
+Ans)
+Garbage collection is a memory management technique used in programming languages to automatically reclaim memory 
+that is no longer accessible or in use by the application. It helps prevent memory leaks, optimize memory usage,
+and ensure efficient memory allocation for the program.
