@@ -586,3 +586,14 @@ Ans)
 Garbage collection is a memory management technique used in programming languages to automatically reclaim memory 
 that is no longer accessible or in use by the application. It helps prevent memory leaks, optimize memory usage,
 and ensure efficient memory allocation for the program.
+
+52) Reverse a string in Python
+Ans)
+def reverse_string(s):
+    return s[::-1]
+    
+original_string = "hello" // [1,2,3,4,5,6,7,8,9]
+reversed_string = reverse_string(original_string)
+
+print("Original String:", original_string) // Original String: hello   // Original String: [1,2,3,4,5,6,7,8,9]
+print("Reversed String:", reversed_string) // Reversed String: olleh   // Reversed String: [9,8,7,6,5,4,3,2,1]
