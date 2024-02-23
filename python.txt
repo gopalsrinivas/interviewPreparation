@@ -583,9 +583,8 @@ print("Merged tuple:", merged_tuple)
 
 51) what is Garbage collection
 Ans)
-Garbage collection is a memory management technique used in programming languages to automatically reclaim memory 
-that is no longer accessible or in use by the application. It helps prevent memory leaks, optimize memory usage,
-and ensure efficient memory allocation for the program.
+Garbage collection is a memory management technique used in programming languages to automatically reclaim memory that is no longer accessible 
+or in use by the application. It helps prevent memory leaks, optimize memory usage, and ensure efficient memory allocation for the program.
 
 52) Reverse a string in Python
 Ans)
@@ -597,3 +596,27 @@ reversed_string = reverse_string(original_string)
 
 print("Original String:", original_string) // Original String: hello   // Original String: [1,2,3,4,5,6,7,8,9]
 print("Reversed String:", reversed_string) // Reversed String: olleh   // Reversed String: [9,8,7,6,5,4,3,2,1]
+
+53) What is Multi-Threading in python
+Ans)
+Multithreading is a technique that allows multiple threads to run concurrently within the same program.
+This can be useful for tasks that can be broken down into smaller, independent subtasks, 
+as each thread can work on a different subtask at the same time.
+There are a number of benefits to using multithreading in Python, including:
+      1. Improved performance
+      2. Increased responsiveness
+      3. Improved resource utilization
+
+54) Django Project file names
+Ans)
+1. manage.py
+2. settings.py
+3. urls.py
+4. wsgi.py
+5. asgi.py
+6. __init__.py
+
+55) What is Virtual DOM
+Ans)
+A virtual DOM (VDOM) is a lightweight JavaScript representation of the Document Object Model (DOM).
+It's a programming concept that keeps an ideal representation of a UI in memory and syncs it with the real DOM.
