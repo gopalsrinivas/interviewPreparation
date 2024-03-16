@@ -620,3 +620,13 @@ Ans)
 Ans)
 A virtual DOM (VDOM) is a lightweight JavaScript representation of the Document Object Model (DOM).
 It's a programming concept that keeps an ideal representation of a UI in memory and syncs it with the real DOM.
+
+56) Find min and max number using in-build
+Ans)
+my_list = [9,4,6,3,7,5]
+
+min_num = min(my_list)
+max_num = max(my_list)
+
+print("Min Number:", min_num)
+print("Max Number:", max_num)
