@@ -579,7 +579,7 @@ tuple2 = ('a', 'b', 'c')
 # Merging both tuples
 merged_tuple = tuple1 + tuple2
 
-print("Merged tuple:", merged_tuple)
+print("Merged tuple:", merged_tuple)  o/p: (1, 2, 3, 'a', 'b', 'c')
 
 51) what is Garbage collection
 Ans)
